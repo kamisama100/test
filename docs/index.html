@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="font-barlow overflow-x-hidden">
+    <main class="h-auto sm:h-lvh text-black py-10">
+      <div class="flex items-center justify-center h-full w-full">
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-xl tracking-wide">Select Distribution</span>
+
+          <div class="flex flex-col sm:flex-row gap-4 md:gap-6 xl:gap-8 tracking-tight">
+            <label
+              for="box-1"
+              class="border-active cursor-pointer border-2 rounded-md border-slate-200 h-[380px] sm:h-[458px] w-[80vw] max-w-[312px] md:max-w-[308px] lg:max-w-[348px] xl:max-w-[358px] p-4 sm:p-6 shadow-sm has-[:checked]:shadow-bottom hover:shadow-bottom has-[:checked]:scale-[101%] hover:scale-[101%] transition duration-150"
+            >
+              <div class="flex flex-col gap-4 sm:gap-5 h-full w-full">
+                <span
+                  class="bg-red-50 p-2 sm:p-2.5 w-fit rounded-full flex items-center justify-center"
+                >
+                  <img class="size-6 sm:size-8" src="images/icons/airplane.png" alt="airplane" />
+                </span>
+
+                <div class="flex flex-col gap-2">
+                  <h2 class="text-red-700 font-medium text-xl sm:text-2xl">Basic</h2>
+                  <div class="flex flex-row gap-2 items-center">
+                    <span
+                      class="text-sm sm:text-base font-normal text-ellipsis overflow-hidden text-nowrap"
+                    >
+                      Published to 100+ news sites
+                    </span>
+                    <img
+                      class="min-w-2.5 size-2.5 sm:size-3.5"
+                      src="images/icons/chevron-up.png"
+                      alt="chevron up"
+                    />
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <span class="text-2xl sm:text-3xl font-bold tracking-[0.1rem]">$74.99</span>
+                    <span
+                      class="text-lg sm:text-xl font-medium text-ellipsis overflow-hidden text-nowrap"
+                    >
+                      Per release
+                    </span>
+                    <button class="min-w-3.5 size-3.5 sm:size-4 opacity-80">
+                      <img src="images/icons/info.png" alt="info" />
+                    </button>
+                  </div>
+                </div>
+
+                <ul
+                  class="flex flex-col gap-2.5 sm:gap-3 *:flex *:flex-row *:items-center *:gap-2.5 mt-0.5 text-sm sm:text-base"
+                >
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Published on digital journal</span>
+                  </li>
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Sent to google news</span>
+                  </li>
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Any many more</span>
+                  </li>
+                </ul>
+              </div>
+
+              <input name="box" id="box-1" type="radio" hidden checked />
+            </label>
+            <label
+              for="box-2"
+              class="border-active cursor-pointer border-2 rounded-md border-slate-200 h-[380px] sm:h-[458px] w-[80vw] max-w-[312px] md:max-w-[308px] lg:max-w-[348px] xl:max-w-[358px] p-4 sm:p-6 shadow-sm has-[:checked]:shadow-bottom hover:shadow-bottom has-[:checked]:scale-[101%] hover:scale-[101%] transition duration-150"
+            >
+              <div class="flex flex-col gap-4 sm:gap-5 h-full w-full">
+                <span
+                  class="bg-red-100 p-2 sm:p-2.5 w-fit rounded-full flex items-center justify-center"
+                >
+                  <img class="size-6 sm:size-8" src="images/icons/rocket.png" alt="rocket" />
+                </span>
+
+                <div class="flex flex-col gap-2">
+                  <h2 class="text-red-700 font-medium text-xl sm:text-2xl">US National</h2>
+                  <div class="flex flex-row gap-2 items-center">
+                    <span
+                      class="text-sm sm:text-base font-normal text-ellipsis overflow-hidden text-nowrap"
+                    >
+                      Published to 200+ news sites
+                    </span>
+                    <img
+                      class="min-w-2.5 size-2.5 sm:size-3.5"
+                      src="images/icons/chevron-up.png"
+                      alt="chevron up"
+                    />
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <span class="text-2xl sm:text-3xl font-bold tracking-[0.1rem]">$419.99</span>
+                    <span
+                      class="text-lg sm:text-xl font-medium text-ellipsis overflow-hidden text-nowrap"
+                    >
+                      Per release
+                    </span>
+                    <button class="min-w-3.5 size-3.5 sm:size-4 opacity-80">
+                      <img src="images/icons/info.png" alt="info" />
+                    </button>
+                  </div>
+                </div>
+
+                <ul
+                  class="flex flex-col gap-2.5 sm:gap-3 *:flex *:flex-row *:items-center *:gap-2.5 mt-0.5 text-sm sm:text-base"
+                >
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Published on digital journal</span>
+                  </li>
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Published on PRnewswire.com</span>
+                  </li>
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Published on Yahoo finance</span>
+                  </li>
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Sent to market watch</span>
+                  </li>
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>Sent to google news</span>
+                  </li>
+                  <li>
+                    <img
+                      class="p-0.5 bg-teal-500 rounded-full size-4 sm:size-5"
+                      src="images/icons/check.png"
+                      alt="check"
+                    />
+                    <span>And many more</span>
+                  </li>
+                </ul>
+              </div>
+
+              <input name="box" id="box-2" type="radio" hidden />
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
