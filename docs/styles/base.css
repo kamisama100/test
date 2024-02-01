@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.absolute-center {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 .border-active:has(:checked) {
   border: 2px solid transparent;
   background: linear-gradient(white, white) padding-box,
