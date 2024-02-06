@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.border-active:has(:checked) {
+/* .border-active:has(:checked) {
   border: 2px solid transparent;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(
@@ -30,4 +30,67 @@
         transparent 95%
       )
       border-box;
+} */
+
+.air-datepicker {
+  width: 398px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.air-datepicker .air-datepicker--navigation .air-datepicker-nav {
+  background-color: black;
+  height: 42px;
+  border-bottom: none;
+}
+.air-datepicker .air-datepicker--navigation .air-datepicker-nav--title,
+i {
+  color: white !important;
+}
+
+.air-datepicker .air-datepicker-nav--action svg {
+  filter: brightness(100);
+}
+
+.air-datepicker .air-datepicker--content {
+  padding: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #00000036;
+}
+
+.air-datepicker .air-datepicker--content .air-datepicker-body--day-names {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+.air-datepicker .air-datepicker--content .air-datepicker-body--cells.-days- {
+  font-size: 16px;
+}
+
+.air-datepicker .air-datepicker--content .air-datepicker-body--day-names,
+.air-datepicker-body--day-name.-weekend-,
+.air-datepicker-body--day-name {
+  color: #bb1919;
+}
+
+.air-datepicker-body--cells {
+  place-items: center !important;
+}
+
+.air-datepicker .air-datepicker-cell.-day-.-selected- {
+  background-color: #bb1919;
+  color: white;
+}
+.air-datepicker .air-datepicker-cell.-day- {
+  background-color: transparent;
+  width: 28px;
+  height: 24px;
+  border-radius: 3px;
+  color: #000000bd;
+}
+.air-datepicker .air-datepicker-cell.-day-.-other-month- {
+  color: #80808069;
+}
+
+.air-datepicker--pointer {
+  display: none;
 }

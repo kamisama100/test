@@ -4,12 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
+    <link rel="stylesheet" href="../node_modules/air-datepicker/air-datepicker.css" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body class="font-barlow overflow-x-hidden">
-    <main class="h-auto md:h-lvh text-black py-10">
-      <div class="flex items-center justify-center h-full w-full">
-        <div class="flex flex-col gap-4">
+  <body class="font-roboto overflow-x-hidden">
+    <main class="h-auto md:h-lvh text-black text-lg py-10">
+      <div class="flex pt-20 justify-center h-full w-full">
+        <div class="flex flex-col gap-6 w-full max-w-[400px]">
+          <h3 class="font-bold text-2xl after:text-red-700 after:content-['*'] after:ml-0.5">
+            Date and time
+          </h3>
+          <div class="flex flex-row items-center gap-2.5">
+            <label
+              for="publish"
+              class="group size-6 border-2 rounded has-[:checked]:bg-red-700 has-[:checked]:border-red-700 cursor-pointer flex items-center justify-center"
+            >
+              <img
+                class="pointer-events-none size-[18px]"
+                src="images/icons/check.png"
+                alt="check"
+              />
+              <input id="publish" type="checkbox" hidden />
+            </label>
+            <span>Publish ASAP</span>
+            <img class="size-4" src="images/icons/info.png" alt="info" />
+          </div>
+
+          <div class="flex flex-col gap-2.5 mt-0.5">
+            <span class="text-zinc-400">Publication date:</span>
+            <div class="relative flex flex-row items-center gap-0.5 text-sm">
+              <img
+                class="pointer-events-none absolute top-[50%] translate-y-[-50%] left-4 size-4"
+                src="images/icons/calendar.png"
+                alt="calendar"
+              />
+              <input
+                oninput="toggleOnInput(this, this.parentElement.querySelector('span'))"
+                type="text"
+                id="datepicker"
+                name="datepicker"
+                class="w-full border-2 border-gray-200 h-10 rounded-md px-10 outline-none"
+                placeholder="Select release date"
+              />
+              <span class="absolute top-[50%] translate-y-[-50%] text-red-700 left-[162px]">*</span>
+              <img
+                class="pointer-events-none absolute top-[50%] translate-y-[-50%] right-4 size-4"
+                src="images/icons/chevron-down.png"
+                alt="down chevron"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#datepicker").datepicker({
+          language: "en",
+          offset: 4,
+          autoPosition: false,
+          autoClose: false,
+          days: ["s", "m", "t", "w", "t", "Friday", "Saturday"],
+          daysShort: ["s", "m", "t", "w", "t", "Fri", "Sat"],
+        })
+
+        $("#datepicker").datepicker().data("datepicker").show()
+      })
+    </script> -->
+
+    <div id="publication-options" class="hidden flex flex-row">
+      <input type="text" name="asda" id="something" placeholder="sample" />
+      <input type="text" name="asda" id="something" placeholder="sample" />
+    </div>
+
+    <script src="../node_modules/air-datepicker/air-datepicker.js" defer></script>
+    <script src="../node_modules/air-datepicker/locale/en.js"></script>
+    <script type="module" src="scripts/script.js" defer></script>
+  </body>
+</html>
+
+<!-- <div class="flex flex-col gap-4">
           <span class="font-bold text-xl tracking-wide">Select Distribution</span>
 
           <div class="flex flex-col md:flex-row gap-8 tracking-normal md:tracking-tight">
@@ -178,8 +256,4 @@
               <input name="box" id="box-2" type="radio" hidden />
             </label>
           </div>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+        </div> -->

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        barlow: ["Barlow", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       boxShadow: {
         bottom: "-5px 16px 16px #d6cfcfb8",
