@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   new AirDatepicker("#datepicker", {
     locale: localeEn,
-    offset: 3,
+    offset: 2,
     firstDay: 6,
     multipleDates: false,
     autoClose: true,
