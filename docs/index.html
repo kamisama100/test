@@ -9,8 +9,8 @@
   </head>
   <body class="font-roboto overflow-x-hidden">
     <main class="h-auto text-black text-sm">
-      <div class="flex py-10 justify-center h-full w-full">
-        <div class="flex flex-col gap-5 w-full max-w-[400px]">
+      <div class="flex py-10 px-4 justify-center h-full w-full">
+        <div class="flex flex-col gap-5 w-[288px] min-[393px]:w-[352px] md:w-[378px] lg:w-[400px]">
           <h3 class="font-bold text-xl after:text-red-700 after:content-['*'] after:ml-0.5">
             Date and time
           </h3>
@@ -71,7 +71,9 @@
     <div id="publication-options" class="hidden flex flex-row p-5">
       <div class="flex flex-row justify-between gap-4 text-[#a49a9a] text-sm">
         <div class="flex flex-col flex-1 gap-2">
-          <span class="font-medium text-black">Publication Time</span>
+          <span class="font-medium text-black overflow-hidden text-ellipsis text-nowrap"
+            >Publication Time</span
+          >
           <div class="relative">
             <div class="relative">
               <input
@@ -99,7 +101,9 @@
           </div>
         </div>
         <div class="flex flex-col flex-1 gap-2">
-          <span class="font-medium text-black">Publication Timezone</span>
+          <span class="font-medium text-black overflow-hidden text-ellipsis text-nowrap"
+            >Publication Timezone</span
+          >
           <div class="relative">
             <div class="relative">
               <input

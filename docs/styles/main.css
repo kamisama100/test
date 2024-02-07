@@ -645,12 +645,12 @@ video {
   min-height: 0px;
 }
 
-.w-full{
-  width: 100%;
+.w-\[288px\]{
+  width: 288px;
 }
 
-.max-w-\[400px\]{
-  max-width: 400px;
+.w-full{
+  width: 100%;
 }
 
 .flex-1{
@@ -714,6 +714,14 @@ video {
   overflow-x: hidden;
 }
 
+.text-ellipsis{
+  text-overflow: ellipsis;
+}
+
+.text-nowrap{
+  text-wrap: nowrap;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -759,6 +767,11 @@ video {
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-10{
@@ -836,6 +849,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+* {
+  min-width: 0;
+}
+
 .opacity-100 {
   opacity: 100;
 }
@@ -866,6 +883,8 @@ video {
   background-color: black;
   height: 42px;
   border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .air-datepicker .air-datepicker--navigation .air-datepicker-nav--title,
@@ -975,6 +994,32 @@ i {
   border-radius: 8px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .air-datepicker {
+    width: 378px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .air-datepicker {
+    width: 352px;
+  }
+
+  .air-datepicker--navigation {
+    max-width: 100%;
+  }
+
+  .air-datepicker .air-datepicker-body--cells.-days- {
+    row-gap: 2px;
+  }
+}
+
+@media only screen and (max-width: 392px) {
+  .air-datepicker {
+    width: 288px;
+  }
+}
+
 .after\:ml-0::after{
   content: var(--tw-content);
   margin-left: 0px;
@@ -1014,4 +1059,22 @@ i {
 .has-\[\:checked\]\:bg-red-700:has(:checked){
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 393px){
+  .min-\[393px\]\:w-\[352px\]{
+    width: 352px;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:w-\[378px\]{
+    width: 378px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:w-\[400px\]{
+    width: 400px;
+  }
 }

@@ -3,7 +3,6 @@ let publicationTimezone = "EST"
 
 const toggleHidden = (el) => {
   el.classList.toggle("hidden")
-  console.log(el)
 }
 
 const openDropDown = (dropdown) => {
@@ -48,7 +47,6 @@ const selectInput = (value, input, dropdown) => {
     }
   }
 
-  console.log(dropdown)
   dropdown.classList.replace("max-h-dropdown", "max-h-0")
   dropdown.classList.replace("opacity-100", "opacity-0")
   dropdown.classList.replace("pointer-events-auto", "pointer-events-none")
@@ -73,6 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
     offset: 3,
     firstDay: 6,
     multipleDates: false,
+    autoClose: true,
+    toggleSelected: false,
+    visible: true,
     onShow: moveAdditionalInput,
     onHide: moveAdditionalInputBack,
     onSelect: function () {
