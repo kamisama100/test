@@ -4,38 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .border-active:has(:checked) {
-  border: 2px solid transparent;
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(
-        to bottom,
-        #b91c1c 7%,
-        #b91c1cb8 13%,
-        #a28c8c 50%,
-        #a28c8cc4 75%,
-        transparent 95%
-      )
-      border-box;
+.opacity-100 {
+  opacity: 100;
 }
 
-.border-active:hover {
-  border: 2px solid transparent;
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(
-        to bottom,
-        #b91c1c 7%,
-        #b91c1cb8 13%,
-        #a28c8c 50%,
-        #a28c8cc4 75%,
-        transparent 95%
-      )
-      border-box;
-} */
+.max-h-dropdown {
+  max-height: 120px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.shadow-custom {
+  box-shadow: 0 0.5px 2px rgb(0, 0, 0, 0.2);
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
 
 .air-datepicker {
-  width: 398px;
-  overflow: hidden;
+  width: 400px;
+  overflow: visible;
   border-radius: 8px;
+  border: 0;
+  box-shadow: 0 1px 2.5px rgb(0, 0, 0, 0.15);
 }
 
 .air-datepicker .air-datepicker--navigation .air-datepicker-nav {
@@ -48,21 +40,34 @@ i {
   color: white !important;
 }
 
+.air-datepicker .air-datepicker-nav--action:hover,
+.air-datepicker .air-datepicker-nav--action:active,
+.air-datepicker .air-datepicker-nav--title:hover,
+.air-datepicker .air-datepicker-nav--title:active {
+  background-color: transparent;
+}
+
 .air-datepicker .air-datepicker-nav--action svg {
   filter: brightness(100);
 }
 
 .air-datepicker .air-datepicker--content {
   padding: 0;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #00000036;
+  padding-bottom: 12px;
+  padding-top: 8px;
+  border-bottom: 1px solid #ab9c9c36;
 }
 
 .air-datepicker .air-datepicker--content .air-datepicker-body--day-names {
   font-size: 1.2rem;
   margin: 8px 0;
 }
-.air-datepicker .air-datepicker--content .air-datepicker-body--cells.-days- {
+
+.air-datepicker .air-datepicker-body--cells {
+  place-items: center !important;
+}
+
+.air-datepicker .air-datepicker--content .air-datepicker-body--cells {
   font-size: 16px;
 }
 
@@ -72,11 +77,8 @@ i {
   color: #bb1919;
 }
 
-.air-datepicker-body--cells {
-  place-items: center !important;
-}
-
-.air-datepicker .air-datepicker-cell.-day-.-selected- {
+.air-datepicker .air-datepicker-cell.-day-.-selected-,
+.air-datepicker .air-datepicker-cell.-day-.-selected-:hover {
   background-color: #bb1919;
   color: white;
 }
@@ -85,12 +87,53 @@ i {
   width: 28px;
   height: 24px;
   border-radius: 3px;
-  color: #000000bd;
+  color: #00000099;
 }
+.air-datepicker .air-datepicker-cell.-day-:hover {
+  background-color: #bb1919c9;
+  color: white;
+}
+
+.air-datepicker .air-datepicker-cell.-month-,
+.air-datepicker .air-datepicker-cell.-year- {
+  padding: 2px 8px;
+  color: black;
+}
+
+.air-datepicker .air-datepicker-cell.-month-:hover,
+.air-datepicker .air-datepicker-cell.-year-:hover {
+  background-color: #bb1919c9;
+  color: white;
+}
+
+.air-datepicker .air-datepicker-cell.-month-.-selected-,
+.air-datepicker .air-datepicker-cell.-month-.-selected-:hover,
+.air-datepicker .air-datepicker-cell.-year-.-selected-,
+.air-datepicker .air-datepicker-cell.-year-.-selected-:hover {
+  background-color: #bb1919;
+  color: white;
+}
+
+.air-datepicker .air-datepicker-body--cells.-days- {
+  row-gap: 4px;
+}
+
 .air-datepicker .air-datepicker-cell.-day-.-other-month- {
+  color: #80808069;
+}
+.air-datepicker .air-datepicker-cell.-day-.-other-month-:hover {
+  background-color: transparent;
   color: #80808069;
 }
 
 .air-datepicker--pointer {
   display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a49a9a;
+  border-radius: 8px;
 }
