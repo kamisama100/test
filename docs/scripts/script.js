@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
     multipleDates: false,
     autoClose: true,
     toggleSelected: false,
-    visible: true,
     onShow: moveAdditionalInput,
     onHide: moveAdditionalInputBack,
     onSelect: function () {
